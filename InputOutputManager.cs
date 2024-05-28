@@ -27,10 +27,10 @@ namespace HangMan
         public int manageInput() {
 
             int option = -1;
-            string choice = Console.ReadLine();
+            string? choice = Console.ReadLine();
             try
             {
-                option = int.Parse(choice);
+                option = int.Parse(choice!);
                 
             }
             catch (FormatException exp)

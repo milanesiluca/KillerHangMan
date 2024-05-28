@@ -35,7 +35,7 @@ namespace HangMan
 
         public void runGame()
         {
-            char wordChar;
+            
             string word = string.Empty;
 
             for (int i = 0; i < _wordsChar.Length; i++)
@@ -46,16 +46,19 @@ namespace HangMan
 
 
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine("*****************************");
-            Console.WriteLine("*                           *");
-            Console.WriteLine("* Wellcome to Mortal Kombat *");
-            Console.WriteLine("*                           *");
-            Console.WriteLine("* Sorry, I mean, to Hangman *");
-            Console.WriteLine("*                           *");
-            Console.WriteLine("*****************************");
-            Console.WriteLine();
+            Console.BackgroundColor = ConsoleColor.White;
+            Console.WriteLine("                                     ");
+            Console.WriteLine("   *******************************   ");
+            Console.WriteLine("   *                             *   ");
+            Console.WriteLine("   *  Wellcome to Mortal Kombat  *   ");
+            Console.WriteLine("   *                             *   ");
+            Console.WriteLine("   *  Sorry, I mean, to Hangman  *   ");
+            Console.WriteLine("   *                             *   ");
+            Console.WriteLine("   *******************************   ");
+            //Console.WriteLine();
             Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine("*      Prepare to Die!      *");
+            Console.WriteLine("   *       Prepare to Die!       *   ");
+            Console.WriteLine("                                     ");
             Console.ResetColor(); 
             Console.WriteLine();
 
@@ -138,6 +141,8 @@ namespace HangMan
             } else {
 
                 Console.Clear();
+                Console.WriteLine("The secret word is ´'" + _secretWord + "'");
+                Console.WriteLine();
                 Console.BackgroundColor = ConsoleColor.Red;
                 Console.ForegroundColor= ConsoleColor.Yellow;
                 Console.WriteLine("*****************************");
