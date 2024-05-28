@@ -141,17 +141,19 @@ namespace HangMan
             } else {
 
                 Console.Clear();
-                Console.WriteLine("The secret word is ´'" + _secretWord + "'");
+                Console.WriteLine("The secret word is '" + _secretWord + "'");
                 Console.WriteLine();
                 Console.BackgroundColor = ConsoleColor.Red;
                 Console.ForegroundColor= ConsoleColor.Yellow;
-                Console.WriteLine("*****************************");
-                Console.WriteLine("*                           *");
-                Console.WriteLine("*         YOU DIED!         *");
-                Console.WriteLine("*                           *");
-                Console.WriteLine("*         Fatality!         *");
-                Console.WriteLine("*                           *");
-                Console.WriteLine("*****************************");
+                Console.WriteLine("                                       ");
+                Console.WriteLine("  ***********************************  ");
+                Console.WriteLine("  *                                 *  ");
+                Console.WriteLine("  *            YOU DIED!            *  ");
+                Console.WriteLine("  *                                 *  ");
+                Console.WriteLine("  *            Fatality!            *  ");
+                Console.WriteLine("  *                                 *  ");
+                Console.WriteLine("  ***********************************  ");
+                Console.WriteLine("                                       ");
                 Console.ResetColor();
             
             }
